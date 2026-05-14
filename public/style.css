@@ -24,19 +24,6 @@ body  {
     left: 9rem;
 }
 
-/* #header-labels {
-    font-size: 23px; */
-    /* font-family: 'Switzer', sans-serif; */
-    /* font-family: 'Playfair Display', serif;
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    color: #f7f7f7;
-    position: absolute;
-    top: 75px;
-    right: 23rem;
-} */
-
 #header-lab1 {
     font-size: 18px;
     font-family: 'Playfair Display', serif;
@@ -96,9 +83,35 @@ body  {
 }
 
 #header-line {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     opacity: 35%;    
     
     background: #6c63ff;;
     box-shadow: 0 5px 15px 1px  #f5f5f7;
+}
+
+#top-title-bg {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 200px;
+    left: 450px;
+}
+
+#srt-heading {
+    font-size: 20px;
+    position: absolute;
+    top: 520px;
+    left: 470px;                           
+    color: #f7f7f7;
+    font-family: Bahnschrift;
+}
+
+#bigtitle {
+    font-size: 60px;
+    position: absolute;
+    top: 650px;
+    left: 470px;                           
+    color: #f7f7f7;
+    font-family: Bahnschrift;
 }
