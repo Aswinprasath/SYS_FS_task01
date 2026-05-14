@@ -1,4 +1,104 @@
 
 body  {
     background-color: #000000;
+    position: relative;
+}
+
+#lg-on-head {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 7px solid  #f7f7f7;
+    border-radius: 50px;
+}
+
+#web-name {
+    color: #f7f7f7;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: Impact;
+    position: absolute;
+    font-size: 80px;
+    top: 28px;
+    margin: 0;
+    left: 9rem;
+}
+
+/* #header-labels {
+    font-size: 23px; */
+    /* font-family: 'Switzer', sans-serif; */
+    /* font-family: 'Playfair Display', serif;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    color: #f7f7f7;
+    position: absolute;
+    top: 75px;
+    right: 23rem;
+} */
+
+#header-lab1 {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    color: #f7f7f7;
+    position: absolute;
+    top: 75px;
+    right: 28rem;
+}
+
+#header-lab2 {
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    color: #f7f7f7;
+    position: absolute;
+    top: 75px;
+    right: 20rem;
+}
+
+#signupbtn1 {
+    position: absolute;
+    top: 60px;
+    right: 12rem;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #000000 ;
+    font-size: 14px;
+    font-family: Franklin Gothic Medium;
+}
+
+#signupbtn1:hover {
+    border: 1px solid #faf8f8 ;
+    background-color: #000000;
+    color: #f7f7f7;
+}
+
+#loginbtn1 {
+    position: absolute;
+    top: 60px;
+    right: 7rem;
+    width: 63px;
+    height: 38px;
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px solid #faf8f8 ;
+    background-color: #000000;
+    color: #f7f7f7;
+    font-size: 15px;
+    font-family: Franklin Gothic Medium;
+}
+
+#loginbtn1:hover {
+    border: 1px solid #0000;
+    background-color: #f7f7f7;
+    color: #000000;
+}
+
+#header-line {
+    margin-top: 2rem;
+    opacity: 35%;    
+    
+    background: #6c63ff;;
+    box-shadow: 0 5px 15px 1px  #f5f5f7;
 }
