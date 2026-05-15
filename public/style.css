@@ -11,6 +11,8 @@ body  {
     margin-left: 2rem;
     border: 7px solid  #f7f7f7;
     border-radius: 50px;
+    background: linear-gradient( to right, green, blue, white, black);
+
 }
 
 #web-name {
@@ -90,28 +92,95 @@ body  {
     box-shadow: 0 5px 15px 1px  #f5f5f7;
 }
 
+.features-elements {
+    position: absolute;
+    top: 180px;
+    width: 1230px;
+    height: 300px;
+    left: 10px;
+    background-color: #f7f7f7;
+    display: none;
+}
+
 #top-title-bg {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     position: absolute;
     top: 200px;
-    left: 450px;
+    left: 460px;
+    /* box-shadow: 10px 0 30px 20px #f7f7f7; */
 }
 
 #srt-heading {
     font-size: 20px;
     position: absolute;
-    top: 520px;
-    left: 470px;                           
+    top: 540px;
+    left: 460px;                           
     color: #f7f7f7;
     font-family: Bahnschrift;
+    text-shadow: 0 0 60px rgba(255, 255, 255, 0.7);
+
 }
 
 #bigtitle {
     font-size: 60px;
     position: absolute;
-    top: 650px;
-    left: 470px;                           
+    top: 570px;
+    left: 435px;                           
     color: #f7f7f7;
+    background: linear-gradient( to right, green, blue, white, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: Bahnschrift;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
+
+#guest-btn1 {
+    position: absolute;
+    top:710px;
+    left:390px;
+    padding: 15px;
+    color: #f7f7f7;
+    background-color: #000000;
+    border: 1px solid #4b8126;
+    border-radius: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+}
+
+#guest-btn1:hover {
+    background-color: #4b8126;
+    border: 1px solid #fbfbfb;
+}
+
+#login-btn2 {
+    position: absolute;
+    top:710px;
+    left:600px;
+    padding: 15px;
+    /* width: 300px;
+    height: 50px; */
+    color: #f7f7f7;
+    background: linear-gradient( to right, blue, black);
+    border: 1px solid #4b8126;
+    border-radius: 10px;
+    font-family: Rockwell;
+    font-size: 20px;
+}
+
+#login-btn2:hover {
+    /* background: linear-gradient( to right, black, blue); */
+    border: 1px solid #f7f7f7;
+    opacity: 80%;
+}
+
+#video-box {
+    position: absolute;
+    top: 700px;
+    margin: 50px;
+    width: 1150px;
+    height: 850px;
+    left: 60px;
+    border-radius: 20px;
+}
+
