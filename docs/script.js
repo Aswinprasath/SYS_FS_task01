@@ -46,11 +46,11 @@ observer.observe(vediotop)
 
 const slidevideos = [
 
-    '../assets/slidevideos/videoone.mp4',
+    'assets/slidevideos/videoone.mp4',
 
-    '../assets/slidevideos/videotwo.mp4',
+    'assets/slidevideos/videotwo.mp4',
 
-    '../assets/slidevideos/videothree.mp4'
+    'assets/slidevideos/videothree.mp4'
 
 ];
 
