@@ -190,7 +190,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 350px;
     /* margin-top: 300px; */
     background-color: #000000;
@@ -209,15 +209,15 @@ body {
 
 #video-box {
     position: relative;
-
-    width: 1150px;
-    height: 850px;
+    border: 1px solid #787878;
+    width: 1000;
+    height: 650px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 
     max-width: 100%;
     max-height: 100%;
@@ -233,6 +233,38 @@ body {
     border-radius: 20px;
 }
 
+#prevideobtnc2 {
+    position: absolute;
+    top: 550px;
+    left: 570px;
+    color: #f7f7f7;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 40px;
+    border: 1px solid #0000ff;
+    backdrop-filter: blur(20px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#nexvideobtnc2 {
+    position: absolute;
+    top: 550px;
+    left: 642px;
+    color: #f7f7f7;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #0000ff;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    font-size: 40px;
+    /* background-color: #f7f7f7; */
+}
+
 .card-three {
     position: relative;
     width: 1180px;
@@ -246,7 +278,7 @@ body {
     top: -700px;
     margin-top: 150px;
     background-color: #000000;
-    /* border: 1px solid #f7f7f7; */
+    border: 1px solid #f7f7f7;
     border-radius: 20px 0 20px 0;
 
     box-shadow:
@@ -780,7 +812,7 @@ body {
     color: #f7f7f7;
     margin-top: 70px;
     width: 1000px;
-    opacity: 80%;
+    opacity: 50%;
 }
 
 .contact-card {
@@ -800,17 +832,20 @@ body {
 }
 
 #contact-form {
-    background-color: #f7f7f7;
+    background-color: #000000;
+    color: #f7f7f7;
     position: absolute;
     top: 100px;
     left: 300px;
     padding: 25px;
     border-radius: 15px;
-    border: 2px solid #0000ff;
+    border: 1px solid #0000ff;
     /* background: linear-gradient(to right, #4b8126, #0000ff, #f7f7f7, #000000); */
+    box-shadow: 0 0 10px 2px #808180;
 }
 
-input, textarea {
+input,
+textarea {
     padding: 5px;
     border-radius: 5px;
 }
@@ -833,6 +868,9 @@ td {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #4848b2;
+    font-size: 22px;
+    font-family: Rockwell;
 }
 
 #subbtb-con:hover {
@@ -840,11 +878,25 @@ td {
     border: 1px solid #0000ff;
 }
 
+#hr-abovefoot {
+    opacity: 20%;
+    background: #f7f7f7;
+    box-shadow: 0 5px 20px 2px #f5f5f7;
+
+    /* width: 220px; */
+    /* margin-bottom: 235px; */
+    position: relative;
+
+    /* left: 50px; */
+    top: -22px;
+}
+
 .footer-card {
     width: auto;
-    height: 500px;
+    height: 370px;
     /* background-color: #f7f7f7; */
     position: relative;
+    top: 10px;
 }
 
 #lg-onfoot {
@@ -860,4 +912,107 @@ td {
     font-family: Impact;
     color: #f7f7f7;
     font-size: 40px;
+}
+
+#des-onfoot {
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    width: 500px;
+    color: #f7f7f7;
+    border-left: 2px solid #4b8126;
+    padding: 10px;
+    font-family: Calibri;
+    opacity: 80%;
+}
+
+#labelfirst-onfoot {
+    position: absolute;
+    top: 80px;
+    left: 700px;
+    display: flex;
+    flex-direction: row;
+    color: #f7f7f7;
+    gap: 40px;
+}
+
+
+
+#labelsecond-onfoot {
+    position: absolute;
+    top: 140px;
+    left: 700px;
+    display: flex;
+    flex-direction: row;
+    color: #f7f7f7;
+    gap: 40px;
+}
+
+#homelab-onfoot:hover {
+    border-bottom: 1px solid #f7f7f7;
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+
+#aboutlab-onfoot:hover {
+    border-bottom: 1px solid #f7f7f7;
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+
+#contactlab-onfoot:hover {
+    border-bottom: 1px solid #f7f7f7;
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+
+#featureslab-onfoot:hover {
+    border-bottom: 1px solid #f7f7f7;
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+
+#explorelab-onfoot:hover {
+    border-bottom: 1px solid #f7f7f7;
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+
+#loginlab-onfoot:hover {
+    border-bottom: 1px solid #f7f7f7;
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+
+#social-head-onfoot {
+    position: absolute;
+    left: 70px;
+    top: 190px;
+    color: #f7f7f7;
+    font-family: Bahnschrift SemiBold;
+}
+
+#socialicons-onfoot {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: absolute;
+    top: 250px;
+    left: 70px;
+}
+
+#igicon-onfoot,
+#fbicon-onfoot,
+#xicon-onfoot,
+#lnicon-onfoot {
+    width: 20px;
+    height: 20px;
+}
+
+#copyrightline-onfoot {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+    color: #f7f7f7;
+    font-family: Book Antiqua;
 }

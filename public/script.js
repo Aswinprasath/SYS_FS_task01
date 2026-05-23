@@ -2,11 +2,11 @@
 
 const labelone = document.getElementById("header-lab2");
 
-labelone.addEventListener("mouseover" , () => {
+labelone.addEventListener("mouseover", () => {
     labelone.innerText = "Explore ▲ ";
 });
 
-labelone.addEventListener("mouseout" , () => {
+labelone.addEventListener("mouseout", () => {
     labelone.innerText = "Explore ▼ ";
 });
 
@@ -19,12 +19,12 @@ const elementsfea = document.getElementById("fea-elements");
 
 const headerlab1 = document.getElementById("header-lab1");
 
-headerlab1.addEventListener('click' , () => {
+headerlab1.addEventListener('click', () => {
     // elementsfea.style.display = "block";
-    if( elementsfea.style.display === "none"){
+    if (elementsfea.style.display === "none") {
         elementsfea.style.display = "block";
     }
-    else{
+    else {
         elementsfea.style.display = "none";
     }
 });
@@ -33,13 +33,103 @@ const vediotop = document.getElementById("video-box");
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
             vediotop.play();
         }
-        else{
+        else {
             vediotop.pause();
         }
     });
 });
 
 observer.observe(vediotop)
+
+const slidevideos = [
+
+    '../assets/slidevideos/videoone.mp4',
+
+    '../assets/slidevideos/videotwo.mp4',
+
+    '../assets/slidevideos/videothree.mp4'
+
+];
+
+
+
+const firstvideo = 0;
+
+const lastvideo = slidevideos.length - 1;
+
+let currentvideo = 0;
+
+
+
+const nexvideobtnc2 =
+document.getElementById('nexvideobtnc2');
+
+
+
+nexvideobtnc2.addEventListener('click', () => {
+
+    const videoTag =
+    document.getElementById('video-box');
+
+
+
+    currentvideo++;
+
+
+
+    if(currentvideo > lastvideo){
+
+        currentvideo = 0;
+
+    }
+
+
+
+    videoTag.src = slidevideos[currentvideo];
+
+
+
+    videoTag.load();
+
+    videoTag.play();
+
+});
+
+
+
+const prevideobtnc2 =
+document.getElementById('prevideobtnc2');
+
+
+
+prevideobtnc2.addEventListener('click', () => {
+
+    const videoTag =
+    document.getElementById('video-box');
+
+
+
+    currentvideo--;
+
+
+
+    if(currentvideo < firstvideo){
+
+        currentvideo = lastvideo;
+
+    }
+
+
+
+    videoTag.src = slidevideos[currentvideo];
+
+
+
+    videoTag.load();
+
+    videoTag.play();
+
+});
