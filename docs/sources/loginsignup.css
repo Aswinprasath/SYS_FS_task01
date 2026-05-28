@@ -1,0 +1,232 @@
+/* input::-webkit-inner-spin-button{
+    display: none;
+} */
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    position: relative;
+    top: 30px;
+    left: 180px;
+    width: 900px;
+    height: 500px;
+    background-color: #fcfafa;
+    border: 1px solid #f7f7f7;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#design-box {
+    width: 700px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #ffa500;
+    margin-left: -180px;
+    margin-top: -140px;
+}
+
+
+#maincon-box1 {
+    width: 30%;
+    max-width: 500px;
+    height: 400px;
+    /* background:#fff; */
+    padding: 40px;
+    border-radius: 20px;
+    /* box-shadow:0 10px 25px rgba(0,0,0,0.1); */
+    position: absolute;
+    top: -10px;
+    left: 530px;
+    font-family: Bahnschrift SemiBold;
+    /* display: block; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 13px;
+    color: #dad8d8;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.input-group input,
+.dob-box select {
+    padding: 8px 9px;
+    border: 1px solid #ffa500;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s ease;
+    font-size: 12px;
+}
+
+.input-group input:focus,
+.dob-box select:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+.dob-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dob-label {
+    font-size: 13px;
+    color: #dad8d8;
+    padding-left: 5px;
+}
+
+.dob-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.dob-box select {
+    flex: 1;
+    min-width: 120px;
+    background: #fff;
+}
+
+#submit-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-family: Franklin Gothic Medium;
+    font-family: Rockwell;
+
+}
+
+#submit-btn:hover {
+    background: #357bd8;
+    transform: translateY(-2px);
+}
+
+@media(max-width:600px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .dob-box {
+        flex-direction: column;
+    }
+}
+
+
+#heading {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #f7f7f7;
+    /* box-shadow: 0 0 10px 2px #357bd8; */
+    /* background: linear-gradient(to right, #475035, #f7f7f7, #0000ff, #000000, #4b8126 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-family: Impact;
+    font-family: Arial Black;
+    font-family: Arabic Typesetting;
+    font-family: Bahnschrift;
+    /* font-family: Bahnschrift SemiBold; */
+
+    font-size: 50px;
+    /* opacity: 80%; */
+}
+
+#subheading-registration {
+    position: absolute;
+    top: 320px;
+    left: 20px;
+    color: #f7f7f7;
+    font-family: Book Antiqua;
+    font-size: 22px;
+    /* width: 480px; */
+}
+
+#subheading2-registration {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    color: #000000;
+    font-family: Calibri;
+    font-size: 16px;
+    /* width: 480px; */
+    display: none;
+}
+
+#subheading3-registration {
+    position: absolute;
+    top: 400px;
+    left: 20px;
+    color: #000000;
+    font-family: Calibri;
+    font-size: 16px;
+    /* width: 480px; */
+    display: block;
+}
+
+#logoondesignbox {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    border: 5px solid #f7f7f7;
+    border-radius: 50%;
+    box-shadow: 0 0 35px 1px #000000;
+}
+
+#maincon-box2 {
+    width: 30%;
+    max-width: 500px;
+    height: 400px;
+    /* background:#fff; */
+    padding: 40px;
+    border-radius: 20px;
+    /* box-shadow:0 10px 25px rgba(0,0,0,0.1); */
+    position: absolute;
+    top: 2%;
+    left: 530px;
+    font-family: Bahnschrift SemiBold;
+    /* display: none; */
+}
+
+.formtwo {
+    margin-top: 100px;
+}
+
+#forgotlabel {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+/* #maincon-box1, #maincon-box2 {
+    display: none;   
+} */

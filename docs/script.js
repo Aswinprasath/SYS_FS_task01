@@ -65,14 +65,14 @@ let currentvideo = 0;
 
 
 const nexvideobtnc2 =
-document.getElementById('nexvideobtnc2');
+    document.getElementById('nexvideobtnc2');
 
 
 
 nexvideobtnc2.addEventListener('click', () => {
 
     const videoTag =
-    document.getElementById('video-box');
+        document.getElementById('video-box');
 
 
 
@@ -80,7 +80,7 @@ nexvideobtnc2.addEventListener('click', () => {
 
 
 
-    if(currentvideo > lastvideo){
+    if (currentvideo > lastvideo) {
 
         currentvideo = 0;
 
@@ -101,14 +101,14 @@ nexvideobtnc2.addEventListener('click', () => {
 
 
 const prevideobtnc2 =
-document.getElementById('prevideobtnc2');
+    document.getElementById('prevideobtnc2');
 
 
 
 prevideobtnc2.addEventListener('click', () => {
 
     const videoTag =
-    document.getElementById('video-box');
+        document.getElementById('video-box');
 
 
 
@@ -116,7 +116,7 @@ prevideobtnc2.addEventListener('click', () => {
 
 
 
-    if(currentvideo < firstvideo){
+    if (currentvideo < firstvideo) {
 
         currentvideo = lastvideo;
 
@@ -133,3 +133,69 @@ prevideobtnc2.addEventListener('click', () => {
     videoTag.play();
 
 });
+
+// const signupbtn = document.getElementById('SignUpPg');
+// const loginbtn = document.getElementById('LoginPg');
+// const signupbox = document.getElementById('maincon-box1');
+// const loginbox = document.getElementById('maincon-box2');
+
+// signupbtn.addEventListener('click' , () => {
+//     window.location.href = "sources/loginsignup.html";
+//     signupbox.style.display = "block";
+//     loginbox.style.display = "none";
+// });
+
+// loginbtn.addEventListener('click' , () => {
+//     window.location.href = "sources/loginsignup.html";
+//     signupbox.style.display = "none";
+//     loginbox.style.display = "block";
+// });
+
+// const changetologin = document.getElementById('subheading2-registration');
+// const changetosignup = document.getElementById('subheading3-registration');
+
+// changetologin.addEventListener('click' , () => {
+//     signupbox.style.display = 'none';
+//     loginbox.style.display = 'block';
+// });
+
+// changetosignup.addEventListener('click' , () => {
+//     signupbox.style.display = 'block';
+//     loginbox.style.display = 'none';
+// });
+
+/* =========================
+   INDEX PAGE BUTTONS
+========================= */
+
+const signupbtn =
+    document.getElementById('SignUpPg');
+
+
+
+
+signupbtn.addEventListener('click', () => {
+
+    window.location.href =
+        "sources/loginsignup.html?form=signup";
+
+});
+
+
+
+
+const loginbtn =
+    document.getElementById('LoginPg');
+
+
+
+if (loginbtn) {
+
+    loginbtn.addEventListener('click', () => {
+
+        window.location.href =
+            "sources/loginsignup.html?form=login";
+
+    });
+
+}
