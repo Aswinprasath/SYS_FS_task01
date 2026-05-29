@@ -26,34 +26,34 @@
                 <p id="subheading3-registration">* New to Join ? <button  onclick="gobackhome()">SignUp</button></p>
             </div>
             <div id="maincon-box1" class="form-container">
-                <form>
+                <form action="../../config/signup.php" method="POST">
 
                     <div class="row">
                         <div class="input-group">
-                            <label>First Name</label>
-                            <input type="text" placeholder="Enter first name">
+                            <label for="fnameinp">First Name</label>
+                            <input type="text" placeholder="Enter first name" name="fnamesignup" id="fnameinp">
                         </div>
 
                         <div class="input-group">
-                            <label>Last Name</label>
-                            <input type="text" placeholder="Enter last name">
+                            <label for="lnameinp">Last Name</label>
+                            <input type="text" placeholder="Enter last name" name="lnamesignup" id="lnameinp">
                         </div>
                     </div>
 
                     <div class="input-group">
-                        <label>Email Address</label>
-                        <input type="email" placeholder="Enter email address">
+                        <label for="emailinp">Email Address</label>
+                        <input type="email" placeholder="Enter email address" name="emailsignup" id="emailinp">
                     </div>
 
                     <div class="row">
                         <div class="input-group">
-                            <label>Create Password</label>
-                            <input type="password" placeholder="Create password">
+                            <label for="crepasswordinp">Create Password</label>
+                            <input type="password" placeholder="Create password" name="crepasssignup" id="crepasswordinp">
                         </div>
 
                         <div class="input-group">
-                            <label>Confirm New Password</label>
-                            <input type="password" placeholder="Confirm password">
+                            <label for="conpasswordinp">Confirm New Password</label>
+                            <input type="password" placeholder="Confirm password" name="conpasssignup" id="conpasswordinp">
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@
                         <label class="dob-label">Date of Birth</label>
 
                         <div class="dob-box">
-                            <select>
+                            <select name="datesignup">
                                 <option>Date</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -70,7 +70,7 @@
                                 <option>5</option>
                             </select>
 
-                            <select>
+                            <select name="monthsignup">
                                 <option>Month</option>
                                 <option>January</option>
                                 <option>February</option>
@@ -78,7 +78,7 @@
                                 <option>April</option>
                             </select>
 
-                            <select>
+                            <select name="yearsignup">
                                 <option>Year</option>
                                 <option>2000</option>
                                 <option>2001</option>
@@ -88,23 +88,23 @@
                         </div>
                     </div>
 
-                    <button id="submit-btn">Register</button>
+                    <button type="submit" id="submit-btn">Register</button>
 
                 </form>
             </div>
 
             <div id="maincon-box2" class="form-container2">
                 <form action="" class="formtwo">
-                    <div class="input-group"><label>Email</label><input type="text" value="" name="emaillogin" placeholder="Enter Email Address">
+                    <div class="input-group"><label for="emailinplogin">Email</label><input type="text" value="" name="emaillogin" placeholder="Enter Email Address" id="emailinplogin">
                     </div>
-                    <div class="input-group"><label>Password</label><input type="password" value=""
-                            name="passwordlogin" placeholder="Enter Password"></div>
+                    <div class="input-group"><label for="passwordinp">Password</label><input type="password" value=""
+                            name="passwordlogin" placeholder="Enter Password" id="passwordinp"></div>
                     <div>
 
-                        <lebel id="forgotlabel"><a href="#">Forgot Password?</a></lebel>
+                        <label id="forgotlabel"><a href="#">Forgot Password?</a></label>
 
                     </div>
-                    <button id="submit-btn">Submit</button>
+                    <button id="submit-btn" type="submit">Submit</button>
                 </form>
             </div>
         </div>

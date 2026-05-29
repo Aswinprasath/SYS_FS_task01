@@ -163,39 +163,29 @@ prevideobtnc2.addEventListener('click', () => {
 //     signupbox.style.display = 'block';
 //     loginbox.style.display = 'none';
 // });
-
-/* =========================
-   INDEX PAGE BUTTONS
-========================= */
-
 const signupbtn =
-    document.getElementById('SignUpPg');
+    document.querySelectorAll('.SignUpPg');
 
 
+signupbtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
 
+        window.location.href =
+            "sources/loginsignup.html?form=signup";
 
-signupbtn.addEventListener('click', () => {
-
-    window.location.href =
-        "sources/loginsignup.html?form=signup";
+    });
 
 });
 
-
-
-
 const loginbtn =
-    document.getElementById('LoginPg');
+    document.querySelectorAll('.LoginPg');
 
 
-
-if (loginbtn) {
-
-    loginbtn.addEventListener('click', () => {
+loginbtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
 
         window.location.href =
             "sources/loginsignup.html?form=login";
 
     });
-
-}
+});
